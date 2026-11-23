@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OSARAGI — Member of The Order | Sakamoto Days Showcase</title>
+  <meta name="description" content="Liquid Glass character showcase and personal portfolio inspired by Osaragi from Sakamoto Days." />
+
+  <!-- Google Fonts: Bebas Neue (Display Headings) & Montserrat (Body & UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Dynamic Liquid Background Layer -->
+  <div class="liquid-bg" aria-hidden="true">
+    <div class="liquid-blob blob-crimson"></div>
+    <div class="liquid-blob blob-violet"></div>
+    <div class="liquid-blob blob-silver"></div>
+    <div class="liquid-blob blob-rose"></div>
+    <div class="bg-noise"></div>
+  </div>
+
+  <!-- Top Floating Pill Navbar (Links Only) -->
+  <header class="navbar-wrapper">
+    <nav class="pill-navbar liquid-glass" aria-label="Primary Navigation">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#gallery" class="nav-link" data-section="gallery">Gallery</a></li>
+        <li><a href="#social-media" class="nav-link" data-section="social-media">Social Media</a></li>
+      </ul>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="mobile-menu-label">MENU</span>
+        <span class="mobile-menu-bars" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section: Slanted Parallelogram Liquid Glass Card -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-parallelogram-wrap reveal" data-spotlight-group>
+          <!-- Skewed Glass Surface -->
+          <div class="hero-glass-plane liquid-glass spotlight-glass" aria-hidden="true"></div>
+
+          <!-- Upright Content Grid -->
+          <div class="hero-content-grid">
+            <div class="hero-text-col">
+              <div class="order-badge liquid-glass-subtle">
+                <span class="badge-pulse"></span>
+                <span>JAA • THE ORDER</span>
+              </div>
+
+              <h1 class="hero-title">OSARAGI</h1>
+              <p class="hero-subtitle">Member of The Order — Sakamoto Days</p>
+
+              <p class="hero-tagline">
+                A quiet, deadpan assassin from The Order who handles every target with a massive circular saw.
+              </p>
+            </div>
+
+            <div class="hero-visual-col">
+              <div class="character-render-box">
+                <div class="character-aura" aria-hidden="true"></div>
+                <img
+                  src="osaragi.png"
+                  alt="Osaragi full-body render in gothic dress and veil hat"
+                  class="hero-character-img"
+                  onerror="this.classList.add('is-missing'); this.nextElementSibling.classList.add('visible');"
+                />
+                <div class="fallback-placeholder hero-fallback" aria-hidden="true">
+                  <div class="fallback-icon">
+                    <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+                      <circle cx="12" cy="8" r="4" />
+                      <path d="M5 20c1.5-4.5 12.5-4.5 14 0" />
+                    </svg>
+                  </div>
+                  <span class="fallback-title">OSARAGI RENDER</span>
+                  <span class="fallback-file">Place <code>osaragi.png</code> here</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">01 · PROFILE</span>
+          <h2 class="section-title">About Osaragi</h2>
+        </div>
+
+        <div class="about-glass-card liquid-glass spotlight-glass reveal">
+          <div class="about-grid">
+            <div class="about-narrative">
+              <p class="about-lead">
+                <strong>Osaragi</strong> is one of the newest members of <em>The Order</em>, the top assassin unit under the Japanese Association of Assassins (JAA) in <em>Sakamoto Days</em>.
+              </p>
+              <p class="about-body">
+                She wears a black gothic-lolita dress and veil hat, speaks in a flat, quiet tone, and regularly gets distracted by snacks, hot meals, or odd superstitions between jobs. Once a fight starts, though, she doesn't hesitate—swinging a heavy motorized circular saw with ease and wiping out targets before they can react.
+              </p>
+            </div>
+
+            <div class="about-meta-grid">
+              <div class="meta-tile liquid-glass-subtle spotlight-glass">
+                <span class="meta-label">Affiliation</span>
+                <span class="meta-value">The Order (JAA)</span>
+              </div>
+              <div class="meta-tile liquid-glass-subtle spotlight-glass">
+                <span class="meta-label">Weapon</span>
+                <span class="meta-value">Giant Circular Saw</span>
+              </div>
+              <div class="meta-tile liquid-glass-subtle spotlight-glass">
+                <span class="meta-label">Personality</span>
+                <span class="meta-value">Deadpan · Air-Headed</span>
+              </div>
+              <div class="meta-tile liquid-glass-subtle spotlight-glass">
+                <span class="meta-label">Combat Style</span>
+                <span class="meta-value">Direct Brute Force</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section: Glassmorphism Bento Grid -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">02 · ABILITIES</span>
+          <h2 class="section-title">Combat Skills</h2>
+        </div>
+
+        <div class="skills-bento-grid">
+          <!-- Skill 1 (Wide Bento Card) -->
+          <article class="skill-card skill-card-wide liquid-glass spotlight-glass reveal">
+            <div class="skill-top">
+              <span class="skill-tag">SIGNATURE WEAPON</span>
+            </div>
+            <h3 class="skill-title">Giant Circular Saw Mastery</h3>
+            <p class="skill-desc">
+              Carries a massive motorized buzzsaw inside a black carrying case and swings it cleanly through concrete walls, weapons, and enemies without losing balance.
+            </p>
+            <div class="skill-meter">
+              <div class="skill-meter-header">
+                <span>Cutting Power</span>
+                <span>99%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--skill-level: 99%;"></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Skill 2 -->
+          <article class="skill-card liquid-glass spotlight-glass reveal">
+            <div class="skill-top">
+              <span class="skill-tag">PHYSIQUE</span>
+            </div>
+            <h3 class="skill-title">Immense Physical Strength &amp; Speed</h3>
+            <p class="skill-desc">
+              Moves fast enough to catch veteran killers off-guard and lands crushing hits while fighting in a heavy, layered dress.
+            </p>
+            <div class="skill-meter">
+              <div class="skill-meter-header">
+                <span>Strength &amp; Speed</span>
+                <span>96%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--skill-level: 96%;"></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Skill 3 -->
+          <article class="skill-card liquid-glass spotlight-glass reveal">
+            <div class="skill-top">
+              <span class="skill-tag">MINDSET</span>
+            </div>
+            <h3 class="skill-title">Assassin Instincts &amp; Bloodlust Suppression</h3>
+            <p class="skill-desc">
+              Keeps a completely blank expression right up until impact, giving opponents zero warning or readable killing intent.
+            </p>
+            <div class="skill-meter">
+              <div class="skill-meter-header">
+                <span>Stealth &amp; Focus</span>
+                <span>98%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--skill-level: 98%;"></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Skill 4 (Wide Bento Card) -->
+          <article class="skill-card skill-card-wide liquid-glass spotlight-glass reveal">
+            <div class="skill-top">
+              <span class="skill-tag">ORDER TIER</span>
+            </div>
+            <h3 class="skill-title">Tactical Endurance &amp; Lethality</h3>
+            <p class="skill-desc">
+              Built to outlast high-level assassins in drawn-out fights, reading attack angles and closing distance quickly even after taking damage.
+            </p>
+            <div class="skill-meter">
+              <div class="skill-meter-header">
+                <span>Endurance</span>
+                <span>97%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--skill-level: 97%;"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section: Interactive Anime & Manga Switcher + Lightbox -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="gallery-header-row reveal">
+          <div>
+            <span class="section-kicker">03 · GALLERY</span>
+            <h2 class="section-title">Anime &amp; Manga</h2>
+          </div>
+
+          <!-- Glass Tab Switcher -->
+          <div class="gallery-tabs liquid-glass-subtle" role="tablist" aria-label="Gallery Category Filter">
+            <span class="tab-indicator" aria-hidden="true"></span>
+            <button class="gallery-tab active" role="tab" aria-selected="true" data-filter="all">All</button>
+            <button class="gallery-tab" role="tab" aria-selected="false" data-filter="anime">Anime</button>
+            <button class="gallery-tab" role="tab" aria-selected="false" data-filter="manga">Manga</button>
+          </div>
+        </div>
+
+        <!-- Anime Subsection -->
+        <div class="gallery-group" data-group="anime">
+          <div class="gallery-subhead reveal">
+            <h3>Anime</h3>
+            <span class="subhead-line"></span>
+            <span class="subhead-count">03 Captures</span>
+          </div>
+
+          <div class="gallery-grid">
+            <figure class="gallery-card liquid-glass spotlight-glass reveal" data-category="anime" tabindex="0">
+              <div class="gallery-media">
+                <img
+                  src="anime1.png"
+                  alt="Osaragi Anime 01 — Katsudon Break"
+                  loading="lazy"
+                  onerror="this.classList.add('is-missing'); this.nextElementSibling.classList.add('visible');"
+                />
+                <div class="fallback-placeholder gallery-fallback" aria-hidden="true">
+                  <span class="fallback-title">ANIME 01</span>
+                  <span class="fallback-file"><code>anime1.png</code></span>
+                </div>
+                <div class="gallery-zoom-badge" aria-hidden="true">Expand</div>
+              </div>
+              <figcaption class="gallery-caption">
+                <span class="caption-tag">ANIME · 01</span>
+                <h4>Katsudon Break</h4>
+                <p>Taking a quiet moment to enjoy a hot bowl of katsudon between missions.</p>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-card liquid-glass spotlight-glass reveal" data-category="anime" tabindex="0">
+              <div class="gallery-media">
+                <img
+                  src="anime2.png"
+                  alt="Osaragi Anime 02 — Deadpan Gaze"
+                  loading="lazy"
+                  onerror="this.classList.add('is-missing'); this.nextElementSibling.classList.add('visible');"
+                />
+                <div class="fallback-placeholder gallery-fallback" aria-hidden="true">
+                  <span class="fallback-title">ANIME 02</span>
+                  <span class="fallback-file"><code>anime2.png</code></span>
+                </div>
+                <div class="gallery-zoom-badge" aria-hidden="true">Expand</div>
+              </div>
+              <figcaption class="gallery-caption">
+                <span class="caption-tag">ANIME · 02</span>
+                <h4>Deadpan Gaze</h4>
+                <p>Her signature blank, emotionless stare beneath the black lace veil.</p>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-card liquid-glass spotlight-glass reveal" data-category="anime" tabindex="0">
+              <div class="gallery-media">
+                <img
+                  src="anime3.png"
+                  alt="Osaragi Anime 03 — Snack Stash"
+                  loading="lazy"
+                  onerror="this.classList.add('is-missing'); this.nextElementSibling.classList.add('visible');"
+                />
+                <div class="fallback-placeholder gallery-fallback" aria-hidden="true">
+                  <span class="fallback-title">ANIME 03</span>
+                  <span class="fallback-file"><code>anime3.png</code></span>
+                </div>
+                <div class="gallery-zoom-badge" aria-hidden="true">Expand</div>
+              </div>
+              <figcaption class="gallery-caption">
+                <span class="caption-tag">ANIME · 03</span>
+                <h4>Snack Stash</h4>
+                <p>Holding onto an armful of her favorite Japanese snacks.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Manga Subsection -->
+        <div class="gallery-group" data-group="manga">
+          <div class="gallery-subhead reveal">
+            <h3>Manga</h3>
+            <span class="subhead-line"></span>
+            <span class="subhead-count">03 Panels</span>
+          </div>
+
+          <div class="gallery-grid">
+            <figure class="gallery-card liquid-glass spotlight-glass reveal" data-category="manga" tabindex="0">
+              <div class="gallery-media">
+                <img
+                  src="manga1.png"
+                  alt="Osaragi Manga 01 — After the Fight"
+                  loading="lazy"
+                  onerror="this.classList.add('is-missing'); this.nextElementSibling.classList.add('visible');"
+                />
+                <div class="fallback-placeholder gallery-fallback" aria-hidden="true">
+                  <span class="fallback-title">MANGA 01</span>
+                  <span class="fallback-file"><code>manga1.png</code></span>
+                </div>
+                <div class="gallery-zoom-badge" aria-hidden="true">Expand</div>
+              </div>
+              <figcaption class="gallery-caption">
+                <span class="caption-tag">MANGA · 01</span>
+                <h4>After the Fight</h4>
+                <p>Caught off-guard with disheveled hair and battle marks in sharp manga ink.</p>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-card liquid-glass spotlight-glass reveal" data-category="manga" tabindex="0">
+              <div class="gallery-media">
+                <img
+                  src="manga2.png"
+                  alt="Osaragi Manga 02 — Order in Action"
+                  loading="lazy"
+                  onerror="this.classList.add('is-missing'); this.nextElementSibling.classList.add('visible');"
+                />
+                <div class="fallback-placeholder gallery-fallback" aria-hidden="true">
+                  <span class="fallback-title">MANGA 02</span>
+                  <span class="fallback-file"><code>manga2.png</code></span>
+                </div>
+                <div class="gallery-zoom-badge" aria-hidden="true">Expand</div>
+              </div>
+              <figcaption class="gallery-caption">
+                <span class="caption-tag">MANGA · 02</span>
+                <h4>Order in Action</h4>
+                <p>Tearing through the battlefield at high speed with overwhelming force.</p>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-card liquid-glass spotlight-glass reveal" data-category="manga" tabindex="0">
+              <div class="gallery-media">
+                <img
+                  src="manga3.png"
+                  alt="Osaragi Manga 03 — Cold Stare"
+                  loading="lazy"
+                  onerror="this.classList.add('is-missing'); this.nextElementSibling.classList.add('visible');"
+                />
+                <div class="fallback-placeholder gallery-fallback" aria-hidden="true">
+                  <span class="fallback-title">MANGA 03</span>
+                  <span class="fallback-file"><code>manga3.png</code></span>
+                </div>
+                <div class="gallery-zoom-badge" aria-hidden="true">Expand</div>
+              </div>
+              <figcaption class="gallery-caption">
+                <span class="caption-tag">MANGA · 03</span>
+                <h4>Cold Stare</h4>
+                <p>Intense close-up panel capturing her calm yet intimidating presence.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Media & Minimalist Footer -->
+    <section id="social-media" class="social-footer-section">
+      <div class="social-footer-container reveal">
+        <div class="social-footer-header">
+          <h2 class="social-footer-title">OSARAGI</h2>
+          <p class="social-footer-subtitle">character showcase — liquid glass edition</p>
+        </div>
+
+        <div class="social-pills">
+          <!-- Instagram -->
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-pill"
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <rect x="2.5" y="2.5" width="19" height="19" rx="5.5" />
+              <circle cx="12" cy="12" r="4.2" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+            </svg>
+            <span>@mandarwishhhh</span>
+          </a>
+
+          <!-- GitHub -->
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-pill"
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M9 19c-4.5 1.5-4.5-2.5-6-3m12 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 19 4.77 5.07 5.07 0 0 0 18.91 1S17.73.65 15 2.48a13.38 13.38 0 0 0-6 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+            </svg>
+            <span>@manyagami</span>
+          </a>
+
+          <!-- TikTok -->
+          <a
+            href="https://tiktok.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-pill"
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M14 3v11.5a4 4 0 1 1-3-3.87" />
+              <path d="M14 3c1.2 2.4 3.2 3.8 6 4" />
+            </svg>
+            <span>@surrenderbythem</span>
+          </a>
+
+          <!-- Gmail (Click to Copy) -->
+          <button
+            type="button"
+            id="copyEmailBtn"
+            class="social-pill"
+            data-email="mandarwish017@gmail.com"
+            aria-label="Copy mandarwish017@gmail.com to clipboard"
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <rect x="2.5" y="4.5" width="19" height="15" rx="2.5" />
+              <path d="M3 6l9 7 9-7" />
+            </svg>
+            <span>mandarwish017@gmail.com</span>
+          </button>
+        </div>
+
+        <!-- Minimalist Bottom Bar -->
+        <footer class="minimal-footer-bar">
+          <span>© 2026 xainabsolute</span>
+          <span>osaragi profile</span>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- Full-Screen Glass Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Image Lightbox Viewer">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-dialog liquid-glass">
+      <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12" />
+        </svg>
+      </button>
+
+      <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous Image">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M15 18l-6-6 6-6" />
+        </svg>
+      </button>
+
+      <div class="lightbox-content">
+        <div class="lightbox-img-wrap">
+          <img src="" alt="" id="lightboxImg" />
+          <div class="fallback-placeholder lightbox-fallback" id="lightboxFallback" aria-hidden="true">
+            <span class="fallback-title" id="lightboxFallbackTitle">IMAGE</span>
+            <span class="fallback-file" id="lightboxFallbackFile"></span>
+          </div>
+        </div>
+        <div class="lightbox-meta">
+          <span class="caption-tag" id="lightboxTag"></span>
+          <h3 id="lightboxTitle"></h3>
+          <p id="lightboxDesc"></p>
+        </div>
+      </div>
+
+      <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next Image">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 18l6-6-6-6" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Subtle Bottom-Right Copy Toast -->
+  <div class="glass-toast" id="glassToast" role="status" aria-live="polite">
+    <span class="toast-check" aria-hidden="true">✓</span>
+    <span id="toastMessage">Copied to clipboard</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
